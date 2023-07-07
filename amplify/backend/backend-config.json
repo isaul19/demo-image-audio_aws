@@ -1,0 +1,86 @@
+{
+  "api": {
+    "openai": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "turboFunctionPython"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "imageaudioc68c33e4": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "turboFunctionPython": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_turboFunctionPython_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "turboFunctionPython"
+        }
+      ]
+    },
+    "AMPLIFY_function_turboFunctionPython_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "turboFunctionPython"
+        }
+      ]
+    },
+    "AMPLIFY_function_turboFunctionPython_secretsPathAmplifyAppId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "turboFunctionPython"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "imageaudio": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/turbo": {
+      "name": "/turbo",
+      "lambdaFunction": "turboFunctionPython",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

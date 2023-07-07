@@ -1,0 +1,33 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-imageaudio-dev-84957-authRole",
+      "UnauthRoleArn": "arn:aws:iam::549095003249:role/amplify-imageaudio-dev-84957-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::549095003249:role/amplify-imageaudio-dev-84957-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-imageaudio-dev-84957-deployment",
+      "UnauthRoleName": "amplify-imageaudio-dev-84957-unauthRole",
+      "StackName": "amplify-imageaudio-dev-84957",
+      "StackId": "arn:aws:cloudformation:us-east-1:549095003249:stack/amplify-imageaudio-dev-84957/820ba860-14f1-11ee-bb67-0e3415416185",
+      "AmplifyAppId": "d3kb2aax8tifvr"
+    },
+    "categories": {
+      "function": {
+        "turboFunctionPython": {
+          "secretsPathAmplifyAppId": "d3kb2aax8tifvr",
+          "deploymentBucketName": "amplify-imageaudio-dev-84957-deployment",
+          "s3Key": "amplify-builds/turboFunctionPython-7161322b6b59624b634d-build.zip"
+        }
+      },
+      "auth": {
+        "imageaudioc68c33e4": {}
+      },
+      "storage": {
+        "imageaudio": {}
+      },
+      "api": {
+        "openai": {}
+      }
+    }
+  }
+}
