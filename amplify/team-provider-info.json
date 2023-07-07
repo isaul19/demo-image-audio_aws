@@ -16,7 +16,7 @@
         "turboFunctionPython": {
           "secretsPathAmplifyAppId": "d3kb2aax8tifvr",
           "deploymentBucketName": "amplify-imageaudio-dev-84957-deployment",
-          "s3Key": "amplify-builds/turboFunctionPython-7161322b6b59624b634d-build.zip"
+          "s3Key": "amplify-builds/turboFunctionPython-6d644e2f647035724565-build.zip"
         }
       },
       "auth": {

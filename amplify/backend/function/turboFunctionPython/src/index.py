@@ -36,7 +36,7 @@ def list_s3_sounds():
 sound_data = list_s3_sounds()
 
 MODEL_COMPORT = f"""
-Vas a recibir un string, primero identifica el nombre del animal y sus caracteristicas y retornarlo en inglés, luego de los siguientes datos: {sound_data}, busca el sonido del animal que identificaste. Si no encuentras un animal o sonido solo devuelve un string vacío en su posición, ejemplo, string: "perro corriendo rapido" => "dog running, perro.mp3"
+Vas a recibir un string, primero identifica el nombre del animal y sus caracteristicas y retornarlo en inglés, luego de los siguientes datos: {sound_data}, busca el sonido del animal que haria el identificaste. Si no encuentras un animal o  sonido solo devuelve un string vacío en su posición. ejemplo, string: "perro corriendo rapido" => "dog running,perro.mp3"
 """
 
 
@@ -64,10 +64,10 @@ def handler(event, context):
         messages=[
             {"role": "system", "content": MODEL_COMPORT},
             {"role": "user", "content": "un burro bebe"},
-            {"role": "assistant", "content": "small donkey, BURRO.mp3"},
+            {"role": "assistant", "content": "small donkey,BURRO.mp3"},
             {"role": "user", "content": "caballo corriendo veloz"},
             {"role": "assistant",
-                "content": "horse running, CABALLO.wav"},
+                "content": "horse running,CABALLO.wav"},
             {"role": "user", "content": "jajajjaja"},
             {"role": "assistant", "content": ","},
             {"role": "user", "content": data['prompt']}
