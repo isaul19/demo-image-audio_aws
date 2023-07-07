@@ -4,7 +4,6 @@ import { Amplify, Storage } from "aws-amplify";
 import awsconfig from "../aws-exports";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { gptResponse } from "@/helpers";
 import AudioBtn from "./AudioBtn";
 Amplify.configure(awsconfig);
 
@@ -16,8 +15,6 @@ export default function HomePage() {
     const [isLoading, setIsLoading] = useState(false);
 
     const onChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-        console.log("CAMBIANDO INPUT");
-
         const value = e.target.value;
         setInputValue(value);
     };
@@ -26,6 +23,9 @@ export default function HomePage() {
         const value = inputValue;
         setInputValue("");
         setIsLoading(true);
+        setImage("");
+        setAudio("");
+
         try {
             const response = await fetch("http://localhost:3000/api/", {
                 method: "POST",
@@ -36,6 +36,7 @@ export default function HomePage() {
             });
 
             const data = await response.json();
+            console.log("DATA:", data);
 
             const [animal, sound] = data.split(",");
             setGptText([animal, sound]);
@@ -71,8 +72,6 @@ export default function HomePage() {
         if (gptText[1]?.trim()) {
             getAudio();
         }
-
-        console.log("CAMBIÓ GPT");
     }, [gptText]);
 
     return (
