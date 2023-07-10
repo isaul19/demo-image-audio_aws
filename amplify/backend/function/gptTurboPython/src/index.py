@@ -11,7 +11,7 @@ openai.api_key = ssm.get_parameter(
     Name=ENCRYPTED, WithDecryption=True)['Parameter']['Value']
 
 FOLDER = 'public/sounds'
-S3_BUCKET_NAME = "imageaudio84957-dev"
+S3_BUCKET_NAME = "recoveryimageaudio9cf45a58988249b58ea28ebeffd19151316-dev"
 
 # PROPS ----------------------
 

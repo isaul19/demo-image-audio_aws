@@ -50,12 +50,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "turboFunctionPython",
+            "gptTurboPython",
             {
               "Fn::Join": [
                 "",
                 [
-                  "turboFunctionPython",
+                  "gptTurboPython",
                   "-",
                   {
                     "Ref": "env"
@@ -87,7 +87,7 @@
                         "env": {
                           "Ref": "env"
                         },
-                        "functionName": "turboFunctionPython"
+                        "functionName": "gptTurboPython"
                       }
                     ]
                   },
@@ -114,12 +114,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "imageaudioLambdaRolecdc9b89f",
+            "recoveryimageaudioLambdaRole9ac66d5a",
             {
               "Fn::Join": [
                 "",
                 [
-                  "imageaudioLambdaRolecdc9b89f",
+                  "recoveryimageaudioLambdaRole9ac66d5a",
                   "-",
                   {
                     "Ref": "env"
@@ -231,7 +231,7 @@
                           "env": {
                             "Ref": "env"
                           },
-                          "functionName": "turboFunctionPython"
+                          "functionName": "gptTurboPython"
                         }
                       ]
                     },

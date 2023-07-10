@@ -1,6 +1,6 @@
 {
   "api": {
-    "openai": {
+    "api5bff1eb8": {
       "dependsOn": [
         {
           "attributes": [
@@ -8,7 +8,7 @@
             "Arn"
           ],
           "category": "function",
-          "resourceName": "turboFunctionPython"
+          "resourceName": "gptTurboPython"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -16,7 +16,7 @@
     }
   },
   "auth": {
-    "imageaudioc68c33e4": {
+    "recoveryimageaudiof6173244": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -44,40 +44,40 @@
     }
   },
   "function": {
-    "turboFunctionPython": {
+    "gptTurboPython": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
   },
   "parameters": {
-    "AMPLIFY_function_turboFunctionPython_deploymentBucketName": {
+    "AMPLIFY_function_gptTurboPython_deploymentBucketName": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "turboFunctionPython"
+          "resourceName": "gptTurboPython"
         }
       ]
     },
-    "AMPLIFY_function_turboFunctionPython_s3Key": {
+    "AMPLIFY_function_gptTurboPython_s3Key": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "turboFunctionPython"
+          "resourceName": "gptTurboPython"
         }
       ]
     },
-    "AMPLIFY_function_turboFunctionPython_secretsPathAmplifyAppId": {
+    "AMPLIFY_function_gptTurboPython_secretsPathAmplifyAppId": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "turboFunctionPython"
+          "resourceName": "gptTurboPython"
         }
       ]
     }
   },
   "storage": {
-    "imageaudio": {
+    "s322d9488a": {
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "S3"

@@ -1,32 +1,32 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-imageaudio-dev-84957-authRole",
-      "UnauthRoleArn": "arn:aws:iam::549095003249:role/amplify-imageaudio-dev-84957-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::549095003249:role/amplify-imageaudio-dev-84957-authRole",
+      "AuthRoleName": "amplify-recoveryimageaudio-dev-151316-authRole",
+      "UnauthRoleArn": "arn:aws:iam::549095003249:role/amplify-recoveryimageaudio-dev-151316-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::549095003249:role/amplify-recoveryimageaudio-dev-151316-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-imageaudio-dev-84957-deployment",
-      "UnauthRoleName": "amplify-imageaudio-dev-84957-unauthRole",
-      "StackName": "amplify-imageaudio-dev-84957",
-      "StackId": "arn:aws:cloudformation:us-east-1:549095003249:stack/amplify-imageaudio-dev-84957/820ba860-14f1-11ee-bb67-0e3415416185",
-      "AmplifyAppId": "d3kb2aax8tifvr"
+      "DeploymentBucketName": "amplify-recoveryimageaudio-dev-151316-deployment",
+      "UnauthRoleName": "amplify-recoveryimageaudio-dev-151316-unauthRole",
+      "StackName": "amplify-recoveryimageaudio-dev-151316",
+      "StackId": "arn:aws:cloudformation:us-east-1:549095003249:stack/amplify-recoveryimageaudio-dev-151316/35d36f60-1f5e-11ee-aa76-0e0820eb2815",
+      "AmplifyAppId": "d23vy41qonk6a2"
     },
     "categories": {
+      "auth": {
+        "recoveryimageaudiof6173244": {}
+      },
       "function": {
-        "turboFunctionPython": {
-          "secretsPathAmplifyAppId": "d3kb2aax8tifvr",
-          "deploymentBucketName": "amplify-imageaudio-dev-84957-deployment",
-          "s3Key": "amplify-builds/turboFunctionPython-6d644e2f647035724565-build.zip"
+        "gptTurboPython": {
+          "deploymentBucketName": "amplify-recoveryimageaudio-dev-151316-deployment",
+          "s3Key": "amplify-builds/gptTurboPython-2f535764674b44566b72-build.zip",
+          "secretsPathAmplifyAppId": "d23vy41qonk6a2"
         }
       },
-      "auth": {
-        "imageaudioc68c33e4": {}
-      },
       "storage": {
-        "imageaudio": {}
+        "s322d9488a": {}
       },
       "api": {
-        "openai": {}
+        "api5bff1eb8": {}
       }
     }
   }

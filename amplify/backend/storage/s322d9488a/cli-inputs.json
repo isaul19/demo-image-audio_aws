@@ -1,7 +1,7 @@
 {
-  "resourceName": "imageaudio",
-  "policyUUID": "d2e05632",
-  "bucketName": "imageaudio",
+  "resourceName": "s322d9488a",
+  "policyUUID": "22d9488a",
+  "bucketName": "recoveryimageaudio9cf45a58988249b58ea28ebeffd19",
   "storageAccess": "authAndGuest",
   "guestAccess": [
     "CREATE_AND_UPDATE",
