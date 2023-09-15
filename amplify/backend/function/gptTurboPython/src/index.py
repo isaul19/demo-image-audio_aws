@@ -72,7 +72,7 @@ def handler(event, context):
             {"role": "assistant", "content": ","},
             {"role": "user", "content": data['prompt']}
         ],
-        temperature=0.9,
+        temperature=0,
         frequency_penalty=0.5,
         presence_penalty=1.0
     )
